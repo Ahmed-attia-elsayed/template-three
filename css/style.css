@@ -213,32 +213,34 @@ header .quote{
     width: 900px;
     max-width: 100%;
 }
-@media (max-width: 768px){
-    .landing .intro-text{
-        width: 500px;
-    }
+.landing .intro-text .text{
+    margin-bottom: 50px;
 }
 .landing .intro-text h3{
     font-size: 35px;
     line-height: 1.8;
 }
-@media (max-width: 768px){
-    .landing .intro-text h3{
-        font-size: 5.5vw;
-    }
-}
 .landing .intro-text h2{
     font-size: 5.5vw;
 }
-@media (max-width: 768px){
-    .landing .intro-text h2{
-        font-size: 7vw;
-    }
-}
+
 .landing .intro-text p{
     font-size: 22px;
     margin-top: 20px;
-    margin-bottom: 50px;
+}
+@media (max-width: 768px){
+    .landing .intro-text{
+        width: 500px;
+    }
+    .landing .intro-text h3{
+        font-size: 5.5vw;
+    }
+    .landing .intro-text h2{
+        font-size: 7vw;
+    }
+    .landing .intro-text p{
+        display: none;
+    }
 }
 .landing .intro-text a{
     display: inline-block;
@@ -333,6 +335,7 @@ header .quote{
 }
 .booking .container .info .info-content{
     margin-top: 25px;
+    display: flex;
 }
 @media (max-width: 992px){
     .booking .container .info .info-content{
@@ -781,6 +784,7 @@ header .quote{
 }
 .pet-blog .blog-content .card .text{
     padding: 25px;
+    color: #777;
 }
 .pet-blog .blog-content .card .text h3{
     font-size: 24px;
@@ -788,6 +792,7 @@ header .quote{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: black;
 }
 .pet-blog .blog-content .card .text .icon-blog{
     margin-bottom: 15px;
@@ -861,7 +866,7 @@ header .quote{
     .contact .box .contact-content .row{
         flex-direction: column;
     }
-    .contact .box .contact-content .info{
+    .contact .box .contact-content .info:not(:last-child){
         margin-bottom: 50px;
     }
 }
